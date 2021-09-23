@@ -11,10 +11,10 @@ while user_answer != '=':
                         f'если ваше число больше, введите ">",'
                         f'если ваше меньше, введите "<" \n'
                         f'Это ваше число {ai_answer}?: ')
-    if user_answer == '=':
-        print('Ура я угадал!')
-        break
-    elif user_answer == '<':
-        max_number = ai_answer
-    else:
-        min_number = ai_answer
+
+    if user_answer == '<':
+        max_number = ai_answer - 1
+    elif user_answer == '>':
+        min_number = ai_answer + 1
+else:
+    print('Ура я угадал!')
